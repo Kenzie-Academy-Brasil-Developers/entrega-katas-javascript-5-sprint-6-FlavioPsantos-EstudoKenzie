@@ -127,37 +127,37 @@ function testCountValues2() {
     console.assert(result === expected, `esperado: ${expected}, obtido: ${result}`)
 }
 
-function countValues(arr) {
-    let cont = 0;
-    let str = ''
-    const distinct = [...new Set(arr)];
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; distinct.length; j++) {
-            if (distinct[j] === arr[i]) {
-                cont++;
-                str += `arr[i]` + `${cont}`
-            }
-        }
-    }
-}
-console.log(testCountValues1())
-    //8
-function testEvaluateExpression1() {
-    let result = distinctValues("a + b + c - d", { a: 1, b: 7, c: 3, d: 14 });
-    let expected = -3;
-    console.assert(result === expected, `esperado: ${expected}, obtido: ${result}`)
-}
+// function countValues(arr) {
+//     let cont = 0;
+//     let str = ''
+//     const distinct = [...new Set(arr)];
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; distinct.length; j++) {
+//             if (distinct[j] === arr[i]) {
+//                 cont++;
+//                 str += `arr[i]` + `${cont}`
+//             }
+//         }
+//     }
+// }
+// console.log(testCountValues1())
+//     //8
+// function testEvaluateExpression1() {
+//     let result = distinctValues("a + b + c - d", { a: 1, b: 7, c: 3, d: 14 });
+//     let expected = -3;
+//     console.assert(result === expected, `esperado: ${expected}, obtido: ${result}`)
+// }
 
-function testEvaluateExpression2() {
-    let result = distinctValues("a + b + c - d", { a: 1, b: 2, c: 3, d: 4 });
-    let expected = 2;
-    console.assert(result === expected, `esperado: ${expected}, obtido: ${result}`)
-}
+// function testEvaluateExpression2() {
+//     let result = distinctValues("a + b + c - d", { a: 1, b: 2, c: 3, d: 4 });
+//     let expected = 2;
+//     console.assert(result === expected, `esperado: ${expected}, obtido: ${result}`)
+// }
 
-function evaluateExpression(str, obj) {
-    let letter = str.match(/[a-z]/gi);
-    letter.forEach(element => {
-        console.log(obj.element)
-    });
-    console.log(letter)
-}
+// function evaluateExpression(str, obj) {
+//     let letter = str.match(/[a-z]/gi);
+//     letter.forEach(element => {
+//         console.log(obj.element)
+//     });
+//     console.log(letter)
+// }
